@@ -1,0 +1,121 @@
+/* Define o tamanho base de fonte para o site todo */
+html {
+    font-size: 16px; /* 1rem = 16px */
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* A seção ocupa 100% da altura da tela */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(to right, #7f53ac, #647dee);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 2em;
+  }
+  
+  /* Título com rem (relativo ao html) */
+  .hero h1 {
+    font-size: 2rem; /* 32px */
+    margin-bottom: 2em;
+  }
+  
+  /* Caixa com largura em % e padding em em */
+  .box {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 80%;
+    padding: 2em;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Botão fixo com px */
+  .btn-px {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Botão com rem */
+  .btn-rem {
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    font-size: 1rem;
+    margin: 0.625rem;
+    background-color: #00c9a7;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+
+  /* Responsividade */
+
+/* Telas grandes */
+@media (min-width: 1200px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .box {
+      width: 60%;
+    }
+  }
+  
+  /* Tablets e laptops pequenos */
+  @media (max-width: 991px) {
+    .hero {
+      padding: 1.5em;
+    }
+  
+    .box {
+      width: 70%;
+    }
+  
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* Smartphones (entre 600px e 768px) */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 1em;
+    }
+  
+    .box {
+      width: 90%;
+    }
+  
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Smartphones pequenos */
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 1.25rem;
+    }
+  
+    .btn-px,
+    .btn-rem {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }

@@ -1,0 +1,39 @@
+<form action="/enviar" method="post">
+    <label for="name">Nome:</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" id="email" required>
+
+    <!-- <input type="checkbox" name="suporte" id="suporte" required>
+    <label for="suporte">Suporte</label>
+
+    <input type="checkbox" name="Sugestão" id="Sugestão" required>
+    <label for="Sugestão">Sugestão</label>
+
+    <input type="checkbox" name="Reclamação" id="Reclamação" required>
+    <label for="Reclamação">Reclamação</label>
+
+    <input type="checkbox" name="Outros" id="Outros" required>
+    <label for="Outros">Outros</label> -->
+
+    <label for="assunto">Assunto:</label>
+        <select name="assunto" id="assunto" required>
+            <option value="">Selecione</option>
+            <option value="suporte">Suporte</option>
+            <option value="sugestao">Sugestão</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="outros">Outros</option>
+        </select>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea name="mensagem" id="mensagem" rows="4" required></textarea>
+
+    <label>
+        <input type="checkbox" name="termos" required>
+        Aceito os termos de uso
+      </label>
+
+    <button type="submit">Enviar</button>
+    
+</form>

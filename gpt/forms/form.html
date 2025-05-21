@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulário de Login</title>
+</head>
+<body>
+    <h1>Bem vindo, user!</h1>
+
+    <form action="/enviar" method="post">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required placeholder="Digite seu email">
+
+        <label for="telefone">Digite seu celular:</label>
+        <input type="tel" name="telefone" id="telefone" required>
+
+        <label for="idade">Digite sua idade:</label>
+        <input type="number" name="idade" id="idade">
+
+        <label for="data">Data de nascimento:</label>
+        <input type="date" name="data" id="data">
+
+        <label for="hora">Horário de nascimento:</label>
+        <input type="time" name="hora" id="hora">
+
+        <label for="barra">Nível de cansaço atual:</label>
+        <input type="range" name="barra" id="barra">
+
+        <label for="file">Selecione um arquivo:</label>
+        <input type="file" name="file" id="file">
+
+        <label for="assunto">Assunto</label>
+        <select name="assunto" id="assunto">
+            <option value="eua">EUA</option>
+            <option value="brasil">Brasil</option>
+            <option value="canada">Canadá</option>
+            <option value="italia">Itália</option>
+            <option value="paris">Paris</option>
+        </select>
+
+        <label for="mensagem">Deixe sua opinião</label>
+        <textarea name="mensagem" id="mensagem" rows="10" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
