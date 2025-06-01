@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+span{
+    color: rgb(4, 184, 4);
+}
+
+header{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+}
+
+h1{
+    color: #cac9c9;
+    margin-top: 5px; 
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 7px;
+}
+
+li{
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 50px;
+    font-weight: 600;
+    color: green;
+}
+
+a:hover{
+    color: #16d75d;
+    transition: .5s ease-in-out;
+    font-size: 18px;
+}
+
+.btn-contact {
+    background-color: green;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    margin-top: 15px;
+}
+
+.btn-contact:hover {
+    background-color: #14b95a;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.hero{
+    background-image: url('../img/bg-fundo.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 50px;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 1.55rem;
+    width: 25vw;
+    flex-wrap: wrap;
+    color: #fbfafa;
+    margin-left: 110px;
+}
+
+.btn-learn-more{
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    width: 12vw;
+    height: 6vh;
+    padding: 7px;
+    margin-left: 110px;
+}
+
+.btn-learn-more:hover{
+    background-color: #14b95a;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    font-size: .9rem;
+    color: #fff;
+    width: 13vw;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #393838;
+    height: 70vh;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 0;
+    color: #fff;
+    flex-direction: column;
+}
+
+h3{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    width: 25vw;
+}
+
+.description{
+    font-size: 1.2rem;
+    width: 30vw;
+    margin-left: 58px;
+    margin-bottom: 20px;
+}
+
+.associado{
+    margin-right: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    font-size: .9em;
+}
+
+.associado:hover{
+    background-color: #14b95a;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.box:hover{
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.vantagens{
+    background-color: #5e5d5d96;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    height: 20vh;
+    border-radius: 20px;
+}
