@@ -26,6 +26,10 @@ h1{
     margin-top: 5px; 
 }
 
+h1:hover{
+    cursor: pointer;
+}
+
 ul{
     list-style-type: none;
     display: flex;
