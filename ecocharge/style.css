@@ -171,3 +171,78 @@ h3{
     height: 20vh;
     border-radius: 20px;
 }
+
+.contact {
+    /* Centraliza o formulário na página */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Opcional: Garante que o formulário ocupe a altura total da viewport */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #0e0e0e;
+}
+
+.contact form {
+    /* Estilo do container do formulário */
+    background-color: rgba(70, 69, 69, 0.192); /* Branco com 80% de opacidade */
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px; /* Largura máxima para o formulário */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h3 {
+    /* Estilo do título "Fale Conosco" */
+    text-align: center;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.contact label {
+    /* Estilo dos rótulos (Nome, E-mail, Mensagem) */
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    /* Estilo dos campos de texto e textarea */
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que padding e borda não aumentem a largura */
+    font-size: 1em;
+    background-color: rgb(164, 165, 165);
+    color: #fff;
+}
+
+.contact textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    min-height: 120px; /* Altura mínima para a área de texto */
+}
+
+.contact button[type="submit"] {
+    /* Estilo do botão de envio */
+    background-color: #16d75d; /* Azul */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #14b95a; /* Azul mais escuro no hover */
+}
